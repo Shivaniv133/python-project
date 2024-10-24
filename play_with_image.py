@@ -1,16 +1,16 @@
-# import cv2
-# print("imported....")
-# from PIL import Image
-# image = Image.open("./shinchan.jpeg")
-# image = cv2.imread("./shinchan.jpeg")
-# gray_image = cv2.cvtColor(image,cv2.COLOR_BGR2GRAY)
-# cv2.rectangle (image, (100,100),(250,250),(123,123,123),3)
-# while True:
-#     cv2.imShow("This is my first image",image)
-#     # cv2.imShow("This is my GRAY image",gray_image)
-#     if cv2.waitKey(1) == ord("q"):
-#         break 
-# image.show()
+import cv2
+print("imported....")
+from PIL import Image
+image = Image.open("./shinchan.jpeg")
+image = cv2.imread("./shinchan.jpeg")
+gray_image = cv2.cvtColor(image,cv2.COLOR_BGR2GRAY)
+cv2.rectangle (image, (100,100),(250,250),(123,123,123),3)
+while True:
+    cv2.imShow("This is my first image",image)
+    cv2.imShow("This is my GRAY image",gray_image)
+    if cv2.waitKey(1) == ord("q"):
+        break 
+image.show()
 
 import cv2
 import cv2.data
